@@ -9,8 +9,7 @@ def read_file(fichero):
 	
 def write_file(output_file_name, text_to_write):
 	with open(output_file_name,"w") as f:
-    	 f.write(text_to_write)
-    	 
+    	 f.write(text_to_write)    	 
 
 def cypher_fernet(text):
 	from cryptography.fernet import Fernet as frnt
@@ -40,19 +39,3 @@ def decrypt_fernet(encrypted_text, key):
 		print("Something went wrong with key!!!")
 	except error:
 		print("Something went wrong!!!")	
-
-
-"""
-import style as stl
-
-
-texto_a_cifrar = read_file("test2.txt")
-print(texto_a_cifrar)
-cifrado = cypher_fernet(texto_a_cifrar)
-print(stl.FONDO_VERDE("CLAVE: ") + cifrado[0])
-print(stl.FONDO_ROJO("CIPHER TXT: ") + cifrado[1] )
-key = cifrado[0]
-cipher_text = cifrado[1]
-
-write_file("cifrado.txt", cifrado[1])
-"""
