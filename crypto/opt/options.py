@@ -1,9 +1,8 @@
 from stl import style as stl 
 
 def help():
-
 	print(stl.NEGRITA("""  
-                          
+	
  ██░ ██ ▓█████  ██▓     ██▓███                 
 ▓██░ ██▒▓█   ▀ ▓██▒    ▓██░  ██▒               
 ▒██▀▀██░▒███   ▒██░    ▓██░ ██▓▒               
@@ -38,7 +37,3 @@ def help():
 
 		   	
 	"""))
-	
-
-
-
