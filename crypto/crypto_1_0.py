@@ -3,8 +3,6 @@ import sys
 from stl import style as stl 
 from opt import options as opt
 from func import functions as func
-
-
 #arguments
 args = sys.argv
 #num arguments
@@ -73,33 +71,3 @@ elif(num_args == 3):
 elif(num_args == 4):
 	if(args[1] == "-c" or args[1] == "--cypher" and args[4] == "-o" or args[4] == "--output"):
 		print("cifrado con salida en un archivo llamando {}".format(args[5]))
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
